@@ -1,0 +1,72 @@
+body {
+  height: auto;
+  width: auto;
+  background:rgb(244, 248, 249);
+  padding: 10px;
+  font-family: helvetica;
+}
+a:link{
+  text-decoration: none!important;
+
+}
+.accountName{
+  color:rgb(0, 0, 0);
+}
+.container{
+  background:rgb(255, 255, 255);
+  border:2px solid rgb(225, 232, 237);
+  border-radius: 4px;
+  padding:10px;
+  text:rgb(0, 0, 0);
+  date:rgb(101, 116, 127);
+  bottom text color:
+  follow button:rgb(85, 172, 238);
+  overflow: auto;
+}
+#tweet-upper-list ul{
+
+}
+#tweet-upper-list li{
+   float:left;
+   padding:0px 5px 0px 5px;
+   list-style: none;
+   margin: 0px;
+}
+#tweet-upper-list li:nth-child(1)
+{
+  margin-right: 20px;
+}
+#tweet-upper-list li:nth-child(5)
+{
+  float:right;
+}
+#tweet-upper-list li h1{
+   position: relative;
+   bottom: 25px;
+}
+img{
+  background-repeat: no-repeat;
+  position:relative;
+  display:block;
+  width: 100%;
+  height: 100%;
+}
+.follow-box{
+  border: 1px solid #55acee;
+  background-color: #fff;
+  border-radius: 4px;
+  height:100%;
+  width:100%;
+}
+.follow-box img{
+  height:50%;
+  width:50%;
+}
+.followButton {
+    display: inline;
+    padding: 5.5px 13px 6.5px 11.5px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color:rgb(85, 172, 238);
+}
