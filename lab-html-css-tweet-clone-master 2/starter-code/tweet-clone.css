@@ -3,15 +3,6 @@ body {
   padding: 10px;
   font-family: helvetica;
 }
-img{
-  display:block;
-}
-a:link{
-  text-decoration: none;
-}
-.accountName{
-  color:rgb(0, 0, 0);
-}
 .wrapper{
   background:rgb(255, 255, 255);
   border:2px solid rgb(225, 232, 237);
@@ -19,36 +10,46 @@ a:link{
   padding:10px;
   overflow: auto;
 }
-.container{
-  width: 100%;
-  height: 100%;
+a {
+  text-decoration: none;
+}
+.containerTop .containerBottom{
+  display: flex;
+  flex-direction: row;
 }
 .items{
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  align-items: flex-start;
 }
-.box1{
-  flex-basis: 100px;
-}
-.box2{
-  flex-basis: 20px;
-}
-.box3{
-  flex-basis: 70px;
+.accountContent{
   display: flex;
   flex-direction: column;
 }
-.box3 a{
-  font-size: 30px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
+.accountInfo{
+  display: flex;
+  flex-direction: row;
 }
-.box5{
-  order:2;
-}
-.box5 a{
+.accountRef {
   color:rgb(104, 109, 129);
-  font-size: 30px;
+}
+.accountName {
+  color:rgb(0, 0, 0);
+}
+.followButton{
+  display: flex;
+  flex-direction: row;
+}
+.containerBottom{
+  display: flex;
+  flex-direction: column;
+}
+.topContent{
+  color:rgb(0, 0, 0);
+}
+.midContent{
+  color:rgb(104, 109, 129);
+}
+.bottomContent{
+  display: flex;
+  flex-direction: row;
 }
