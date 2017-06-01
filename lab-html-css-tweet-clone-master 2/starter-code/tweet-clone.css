@@ -13,17 +13,24 @@ body {
 a {
   text-decoration: none;
 }
-.containerTop .containerBottom{
+.containerTop.containerBottom{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .items{
   display: flex;
   flex-direction: row;
 }
+.profilePicture{
+  flex-basis: 72px;
+  padding: 10px;
+}
 .accountContent{
   display: flex;
   flex-direction: column;
+  flex-basis: 82%;
+  padding: 10px;
 }
 .accountInfo{
   display: flex;
@@ -31,13 +38,36 @@ a {
 }
 .accountRef {
   color:rgb(104, 109, 129);
+  font-size: 24px;
 }
 .accountName {
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  margin: 0 10px 0 10px;
+}
+.accountBottomInfo{
+  display: flex;
+  align-self: flex-start;
+}
+.followButtonContainer{
+  padding: 10px;
+  flex-basis: 160px;
+  justify-content: center;
 }
 .followButton{
   display: flex;
   flex-direction: row;
+  border: solid 2px rgb(85, 172, 238);
+  border-radius: 10px;
+  padding: 10px;
+  height: 30px;
+}
+.followButton a{
+  color: rgb(85, 172, 238);
+  font-size: 23px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
 }
 .containerBottom{
   display: flex;
