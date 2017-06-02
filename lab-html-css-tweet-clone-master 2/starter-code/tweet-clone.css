@@ -72,14 +72,27 @@ a {
 .containerBottom{
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  font-size: 24px;
 }
 .topContent{
   color:rgb(0, 0, 0);
 }
 .midContent{
   color:rgb(104, 109, 129);
+  padding-top: 10px;
 }
 .bottomContent{
   display: flex;
   flex-direction: row;
+  color:rgb(104, 109, 129);
+}
+.bottomContent a {
+  flex-basis: 30px;
+  height: 24px;
+  align-self: center;
+  padding-right: 20px;
+}
+.bottomContent p{
+  padding-right: 25px;
 }
