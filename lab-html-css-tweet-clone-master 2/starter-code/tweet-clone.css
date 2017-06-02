@@ -1,18 +1,7 @@
 body {
-  height: auto;
-  width: auto;
   background:rgb(244, 248, 249);
   padding: 10px;
   font-family: helvetica;
-}
-img{
-  display:block;
-}
-a:link{
-  text-decoration: none;
-}
-.accountName{
-  color:rgb(0, 0, 0);
 }
 .wrapper{
   background:rgb(255, 255, 255);
@@ -21,90 +10,89 @@ a:link{
   padding:10px;
   overflow: auto;
 }
-#tweet-upper-list{
-  overflow: auto;
+a {
+  text-decoration: none;
 }
-#tweet-upper-list>li{
-   float:left;
-   padding:0px 5px 0px 5px;
-   list-style: none;
+.containerTop.containerBottom{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-#tweet-upper-list>li:nth-child(1)
-{
-  margin-right: 20px;
+.items{
+  display: flex;
+  flex-direction: row;
 }
-#tweet-upper-list>li:nth-child(5)
-{
-  float:right;
+.profilePicture{
+  flex-basis: 72px;
+  padding: 10px;
 }
-#tweet-upper-list>li h1{
-   position: relative;
-   bottom: 25px;
+.accountContent{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 82%;
+  padding: 10px;
 }
-.follow-box{
-  border: 2px solid rgb(85, 172, 238);
-  border-radius: 4px;
-  width: 100%;
-  position: relative;
-  right: 40px;
-  padding: 0px 0px 0px 15px;
+.accountInfo{
+  display: flex;
+  flex-direction: row;
 }
-#tweet{
-  background-repeat: no-repeat;
-  height: 25px;
-  width: 25px;
-  position: relative;
-  top: -9px;
-}
-#followButton {
-  padding: 5.5px 6px 6.5px 30px;
+.accountRef {
+  color:rgb(104, 109, 129);
   font-size: 24px;
-  font-weight: 700;
-  line-height: 1;
-  color: rgb(85, 172, 238);
-  position: relative;
-  top: 14px;
-  left: 5px;
 }
-.accountRef{
-  position: relative;
-  top: 12px;
-  right: 136px;
-  font-size: 25px;
-  color: rgb(101, 116, 127);
-}
-.midContainer{
-  width: 50%;
-  position: relative;
-  top: -18px;
-}
-.text{
-  position: relative;
-  left: 40px;
-  padding: 5px;
-  font-size: 32px;
-}
-.date{
-  position: relative;
-  color: rgb(101, 116, 127);
-  left: 40px;
-  padding: 5px;
+.accountName {
+  color: rgb(0, 0, 0);
   font-size: 28px;
-  top: -30px;
+  margin: 0 10px 0 10px;
 }
-#tweet-lower-list{
-  height: 100%;
-  position: relative;
-  top: -10px;
+.accountBottomInfo{
+  display: flex;
+  align-self: flex-start;
 }
-#tweet-lower-list>li{
-  float: left;
-  padding: 0px 14px 0px 5px;
-  list-style: none;
-  color: rgb(101, 116, 127);
+.followButtonContainer{
+  padding: 10px;
+  flex-basis: 160px;
+  justify-content: center;
+}
+.followButton{
+  display: flex;
+  flex-direction: row;
+  border: solid 2px rgb(85, 172, 238);
+  border-radius: 10px;
+  padding: 10px;
+  height: 30px;
+}
+.followButton a{
+  color: rgb(85, 172, 238);
+  font-size: 23px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.containerBottom{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
   font-size: 24px;
 }
-#tweet-lower-list>li:nth-child(2n)
-{
-  margin-left: 20px;
+.topContent{
+  color:rgb(0, 0, 0);
+}
+.midContent{
+  color:rgb(104, 109, 129);
+  padding-top: 10px;
+}
+.bottomContent{
+  display: flex;
+  flex-direction: row;
+  color:rgb(104, 109, 129);
+}
+.bottomContent a {
+  flex-basis: 30px;
+  height: 24px;
+  align-self: center;
+  padding-right: 20px;
+}
+.bottomContent p{
+  padding-right: 25px;
 }
